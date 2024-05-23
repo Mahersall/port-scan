@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/carbon"
+    tools:context=".scanner">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Port Scanner"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP address"
+        android:textSize="25sp"
+        android:inputType="textUri"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/etIP"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ports"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:id="@+id/etPorts"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/etResults"
+            android:textColor="@color/white"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:text="Scan"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Back"
+            android:id="@+id/btnBack"
+            android:textSize="20sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:text="Scans"
+            android:id="@+id/btnMyScans"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:text="subnet"
+        android:layout_gravity="center"
+        android:id="@+id/subnet"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

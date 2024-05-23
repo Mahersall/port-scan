@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/carbon"
+    tools:context=".Subnet_activity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP address / class c"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        android:id="@+id/IP2"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="min subnets"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/Min_subnets"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:id="@+id/tvSubnet" />
+
+    </ScrollView>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="subnet"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/subnet2"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="back"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/back3"
+        />
+
+</LinearLayout>
